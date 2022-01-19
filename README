@@ -1,3 +1,10 @@
 Project was imported and originally made for CS 3345 (Data Structures and Introduction to Algorithmic Analysis) with Professor Kamran Khan.
-Please read the documentation for more information.
-Thoughts: Includes a crude GUI using Java Swing that I learned and made in one day for last-minute extra credit.
+The documentation has more details about everything I did here.
+
+Thoughts: The main difficulty here was data management. Six different sorts, each having a time and count for movements and comparisons, as well as all sorts being tested against
+four different list types made it difficult to store all that data. I settled with a static two-dimensional array of longs, though if more sorts were added, some code would have
+to be modified. An ArrayList of ArrayLists would probably be more adaptable. The data for percent difference wasn't hard to calculate, just hard to keep track of along with
+everything else. One major limitation in my code is how each sort's class must be instantiated as a polymorphic object with an abstract Sorter class. I couldn't find a way
+to just call each sort without needing to actually name each one. Maybe I could have an ArrayList storing an object of each sort and go through that instead of individually
+listing each sort. I also included a crude GUI using Java Swing that I learned and made in one day for last-minute extra credit, though code for simply printing the data to
+standard output is still there, just commented out.
