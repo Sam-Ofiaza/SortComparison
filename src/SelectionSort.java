@@ -19,7 +19,6 @@ public class SelectionSort extends Sorter{
                 list[i] = currentMin;
                 incMovements(1);
             }
-            incComparisons(1);
         }
         //System.out.println("After selection sort: " + ComparisonRunner.printArray(list));
     }
